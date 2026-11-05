@@ -120,11 +120,12 @@ function Logo() {
         strokeWidth="1.6"
       />
       <path
-        d="M14 26V14l12 12V14"
+        d="M14 26V14l6 7 6-7v12"
         fill="none"
         stroke="url(#metacria-mark)"
         strokeWidth="2.2"
         strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   );

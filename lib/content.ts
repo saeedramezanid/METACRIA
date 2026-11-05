@@ -6,7 +6,7 @@ export const dirOf = (lang: Lang) => (lang === "fa" ? "rtl" : "ltr");
 
 export const seo: Record<Lang, { title: string; description: string }> = {
   fa: {
-    title: "متاکریا — استودیوی تولید نرم‌افزار",
+    title: "METACRIA — استودیوی تولید نرم‌افزار",
     description:
       "استودیوی محصول برای وب، موبایل، پلتفرم و داده. از کشف ایده تا معماری، توسعه و نگهداری بلندمدت. تهران.",
   },
@@ -18,7 +18,7 @@ export const seo: Record<Lang, { title: string; description: string }> = {
 };
 
 export const brand = {
-  name: { fa: "متاکریا", en: "METACRIA" } satisfies Text,
+  name: { fa: "METACRIA", en: "METACRIA" } satisfies Text,
   suffix: { fa: "استودیو نرم‌افزار", en: "Software Studio" } satisfies Text,
   email: "info@metacriastudio.ir",
   phone: "+98 21 8877 6655",
@@ -600,7 +600,7 @@ export const footer = {
     en: "Software production studio — product, platform and data. Based in Tehran, working remote too.",
   } satisfies Text,
   rights: {
-    fa: "© ۲۰۲۶ متاکریا. همه‌ی حقوق محفوظ است.",
+    fa: "© ۲۰۲۶ METACRIA. همه‌ی حقوق محفوظ است.",
     en: "© 2026 METACRIA. All rights reserved.",
   } satisfies Text,
   columns: [

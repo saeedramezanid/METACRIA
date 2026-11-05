@@ -7,5 +7,5 @@
     </linearGradient>
   </defs>
   <rect width="40" height="40" rx="9" fill="#04060c" />
-  <path d="M13 28V12l14 16V12" fill="none" stroke="url(#g)" stroke-width="3" stroke-linecap="round" />
+  <path d="M13 28V12l7 10 7-10v16" fill="none" stroke="url(#g)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
 </svg>
