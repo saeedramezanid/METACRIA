@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="presentation">
+  <defs>
+    <radialGradient id="glowViolet" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#6d54ff" stop-opacity="0.3" />
+      <stop offset="60%" stop-color="#6d54ff" stop-opacity="0.07" />
+      <stop offset="100%" stop-color="#6d54ff" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="glowAzure" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#3fa9ff" stop-opacity="0.24" />
+      <stop offset="65%" stop-color="#3fa9ff" stop-opacity="0.06" />
+      <stop offset="100%" stop-color="#3fa9ff" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="glowTeal" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#2ee6d6" stop-opacity="0.2" />
+      <stop offset="70%" stop-color="#2ee6d6" stop-opacity="0.04" />
+      <stop offset="100%" stop-color="#2ee6d6" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="ribbon" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0%" stop-color="#6d54ff" stop-opacity="0" />
+      <stop offset="35%" stop-color="#8f7bff" stop-opacity="0.4" />
+      <stop offset="70%" stop-color="#3fa9ff" stop-opacity="0.44" />
+      <stop offset="100%" stop-color="#2ee6d6" stop-opacity="0" />
+    </linearGradient>
+    <linearGradient id="pane" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#b4a6ff" stop-opacity="0.1" />
+      <stop offset="100%" stop-color="#2ee6d6" stop-opacity="0.02" />
+    </linearGradient>
+    <radialGradient id="vignette" cx="0.5" cy="0.42" r="0.72">
+      <stop offset="0%" stop-color="#04060c" stop-opacity="0" />
+      <stop offset="62%" stop-color="#04060c" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#04060c" stop-opacity="0.96" />
+    </radialGradient>
+    <pattern id="mesh" width="64" height="64" patternUnits="userSpaceOnUse">
+      <path d="M64 0H0v64" fill="none" stroke="#b4a6ff" stroke-opacity="0.07" stroke-width="1" />
+    </pattern>
+    <radialGradient id="meshFade" cx="0.5" cy="0.4" r="0.6">
+      <stop offset="0%" stop-color="#fff" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#fff" stop-opacity="0" />
+    </radialGradient>
+    <mask id="meshMask">
+      <rect width="1600" height="900" fill="url(#meshFade)" />
+    </mask>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="26" />
+    </filter>
+    <filter id="node" x="-120%" y="-120%" width="340%" height="340%">
+      <feGaussianBlur stdDeviation="7" />
+    </filter>
+  </defs>
+
+  <rect width="1600" height="900" fill="#04060c" />
+
+  <g mask="url(#meshMask)">
+    <rect width="1600" height="900" fill="url(#mesh)" />
+  </g>
+
+  <g filter="url(#soft)">
+    <ellipse cx="900" cy="250" rx="420" ry="300" fill="url(#glowViolet)" />
+    <ellipse cx="1180" cy="430" rx="330" ry="250" fill="url(#glowAzure)" />
+    <ellipse cx="620" cy="180" rx="260" ry="200" fill="url(#glowTeal)" />
+  </g>
+
+  <g opacity="0.5" fill="none" stroke="url(#ribbon)" stroke-linecap="round">
+    <path d="M-40 760C240 700 360 560 620 520s420-40 640-190 260-220 420-280" stroke-width="2.4" />
+    <path d="M-40 840C300 800 520 660 760 620s500-70 700-200" stroke-width="1.4" stroke-opacity="0.55" />
+    <path d="M120 900C340 780 560 700 820 480s400-260 640-330" stroke-width="1" stroke-opacity="0.4" />
+  </g>
+
+  <g>
+    <g filter="url(#node)" opacity="0.5">
+      <circle cx="620" cy="520" r="9" fill="#8f7bff" />
+      <circle cx="1010" cy="392" r="7" fill="#3fa9ff" />
+      <circle cx="1300" cy="228" r="8" fill="#2ee6d6" />
+      <circle cx="820" cy="480" r="6" fill="#6d54ff" />
+    </g>
+    <circle cx="620" cy="520" r="3" fill="#a99bff" opacity="0.55" />
+    <circle cx="1010" cy="392" r="2.4" fill="#7fc4ff" opacity="0.5" />
+    <circle cx="1300" cy="228" r="2.8" fill="#7fe6dc" opacity="0.5" />
+  </g>
+
+  <g opacity="0.55">
+    <path d="M1080 120l200 96v196l-200 96-200-96V216z" fill="url(#pane)" stroke="#b4a6ff" stroke-opacity="0.16" />
+    <path d="M1080 176l144 70v142l-144 70-144-70V246z" fill="none" stroke="#3fa9ff" stroke-opacity="0.14" />
+    <path d="M340 300l150 72v148l-150 72-150-72V372z" fill="url(#pane)" stroke="#2ee6d6" stroke-opacity="0.12" />
+  </g>
+
+  <rect width="1600" height="900" fill="url(#vignette)" />
+</svg>
