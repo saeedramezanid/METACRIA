@@ -11,7 +11,7 @@ import {
 } from "react";
 import { DEFAULT_LANG, dirOf, seo, type Lang, type Text } from "./content";
 
-const STORAGE_KEY = "nexora-lang";
+const STORAGE_KEY = "metacria-lang";
 
 type LanguageValue = {
   lang: Lang;

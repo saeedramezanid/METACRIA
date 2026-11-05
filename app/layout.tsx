@@ -24,7 +24,7 @@ export const viewport: Viewport = {
   initialScale: 1,
 };
 
-const restoreLanguage = `try{const l=localStorage.getItem("nexora-lang");if(l==="en"||l==="fa"){document.documentElement.lang=l;document.documentElement.dir=l==="fa"?"rtl":"ltr"}}catch(e){}`;
+const restoreLanguage = `try{const l=localStorage.getItem("metacria-lang");if(l==="en"||l==="fa"){document.documentElement.lang=l;document.documentElement.dir=l==="fa"?"rtl":"ltr"}}catch(e){}`;
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (

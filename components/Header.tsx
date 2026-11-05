@@ -107,7 +107,7 @@ function Logo() {
   return (
     <svg viewBox="0 0 40 40" className="size-9 shrink-0" aria-hidden>
       <defs>
-        <linearGradient id="nexora-mark" x1="0" y1="0" x2="1" y2="1">
+        <linearGradient id="metacria-mark" x1="0" y1="0" x2="1" y2="1">
           <stop offset="0%" stopColor="#b4a6ff" />
           <stop offset="55%" stopColor="#3fa9ff" />
           <stop offset="100%" stopColor="#2ee6d6" />
@@ -116,13 +116,13 @@ function Logo() {
       <path
         d="M20 2.5 34.5 11v18L20 37.5 5.5 29V11L20 2.5Z"
         fill="none"
-        stroke="url(#nexora-mark)"
+        stroke="url(#metacria-mark)"
         strokeWidth="1.6"
       />
       <path
         d="M14 26V14l12 12V14"
         fill="none"
-        stroke="url(#nexora-mark)"
+        stroke="url(#metacria-mark)"
         strokeWidth="2.2"
         strokeLinecap="round"
       />
