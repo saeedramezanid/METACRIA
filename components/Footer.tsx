@@ -12,8 +12,10 @@ export function Footer() {
         <div className="grid gap-12 md:grid-cols-[1.2fr_2fr]">
           <div>
             <p className="font-display text-xl font-bold text-mist-100">
-              {t(brand.name)}
-              <span className="text-gradient">.</span>
+              <span dir="ltr">
+                {t(brand.name)}
+                <span className="text-gradient">.</span>
+              </span>
             </p>
             <p className="mt-4 max-w-sm text-[13px] leading-7 text-mist-400">
               {t(footer.blurb)}

@@ -600,7 +600,7 @@ export const footer = {
     en: "Software production studio — product, platform and data. Based in Tehran, working remote too.",
   } satisfies Text,
   rights: {
-    fa: "© ۲۰۲۶ METACRIA. همه‌ی حقوق محفوظ است.",
+    fa: "© ۲۰۲۶ — همه‌ی حقوق برای METACRIA محفوظ است.",
     en: "© 2026 METACRIA. All rights reserved.",
   } satisfies Text,
   columns: [
